@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/server.js",
+    "test": "cross-env NODE_ENV=teste && jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "celebrate": "^12.1.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "knex": "^0.20.13",
     "sqlite3": "^4.1.1"
@@ -30,10 +33,11 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "jest": "^25.2.7",
+    "jest": "^25.3.0",
     "metro-react-native-babel-preset": "^0.59.0",
     "nodemon": "^2.0.2",
     "prettier": "^2.0.2",
-    "react-test-renderer": "16.11.0"
+    "react-test-renderer": "16.11.0",
+    "supertest": "^4.0.2"
   }
 }

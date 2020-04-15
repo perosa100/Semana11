@@ -18,8 +18,6 @@ module.exports = {
   async index(req, res) {
     const [count] = await connection('incidents').count();
 
-    console.log(count);
-
     const { page = 1 } = req.query;
 
     const incidents = await connection('incidents')
